@@ -75,8 +75,7 @@
                     {{ trans("Ceres::Template.itemExclusive") }}
                     <a {% if shippingCat is not empty %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
                 </span>
-				
-				<slot name="AfterPrice"></slot>
+		
 
 				<span v-if="currentVariation.variation.availability" :class="'availability tag availability_' + currentVariation.variation.availability.id">
 					<span>
